@@ -1,5 +1,9 @@
 // displays current day at the header of page 
-var currentDay = dayjs().format("dddd, MMM DD");
+import advancedFormat from "dayjs/plugin/advancedFormat";
+
+dayjs.extend(advancedFormat);
+
+var currentDay = dayjs().format("dddd, MMM Do");
 $("#currentDay").text(currentDay);
 
 // will retrieve current time in 24 hour style
