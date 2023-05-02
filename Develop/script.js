@@ -1,7 +1,5 @@
 // displays current day at the header of page 
-import advancedFormat from "dayjs/plugin/advancedFormat";
-
-dayjs.extend(advancedFormat);
+dayjs.extend(window.dayjs_plugin_advancedFormat);
 
 var currentDay = dayjs().format("dddd, MMM Do");
 $("#currentDay").text(currentDay);
