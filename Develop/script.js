@@ -1,13 +1,14 @@
-// Wrap all code that interacts with the DOM in a call to jQuery to ensure that
-// the code isn't run until the browser has finished rendering all the elements
-// in the html.
+// displays current day at the header of page 
 var currentDay = dayjs().format("dddd, MMM DD");
 $("#currentDay").text(currentDay);
 
+// will retrieve current time in 24 hour style
 var currentTime=dayjs().format("HH");
 
+// will contain value of user input when entered in calendar events 
 var userInput=$(".description");
 
+// will run when browser loads to indicate by color in the time blocks current, past or future  
 $(".time-block").each(function(){
   var id = $(this).attr("id");
 
@@ -23,12 +24,21 @@ $(".time-block").each(function(){
     $(this).addClass("future")
   }
 
+// event listener function to run when saving events on calendar 
 $(".saveBtn").on("click", function () {
   var key=$(this).parent().attr("id");
   var userInput=$(this).siblings(".description").val();
 
   localStorage.setItem(key,userInput);    
-  
 })
 });
+// store events on calendar and display on time block
 $("#09 .description").val(localStorage.getItem("09"));
+$("#10 .description").val(localStorage.getItem("10"));
+$("#11 .description").val(localStorage.getItem("11"));
+$("#12 .description").val(localStorage.getItem("12"));
+$("#13 .description").val(localStorage.getItem("13"));
+$("#14 .description").val(localStorage.getItem("14"));
+$("#15 .description").val(localStorage.getItem("15"));
+$("#16 .description").val(localStorage.getItem("16"));
+$("#17 .description").val(localStorage.getItem("17"));
