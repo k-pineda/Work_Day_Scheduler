@@ -2,25 +2,16 @@
 
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
-
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
+Remembering work day events is important to meeting deadlines and attending any meetings. Sometimes remembering or keeping tracking of these events is challenging. This project was built because it will help working professionals keep track of work day events. This project was built to ensure any upcoming events are not missed. While building this project I learned about the use of dayjs and local storage.
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+ To use the work day scheduler start by clicking the time block. After clicking inside the timeblock, the text cursor will display with content typed. To save the event on the right hand side of the time block is a blue save button. After clicking the save button, the new event will show and will continue to show even when the page is reloaded. The colors indicate if at the current time the scheduler is loaded the event will happen in the future (green), past (gray) or red (present). 
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative file path, add it to your README using the following syntax:
+![Demo of Work Day Scheduler](./Assets/Work_Day_Scheduler_Demo.gif)
 
-![alt text](assets/images/screenshot.png)
+[Work Day Scheduler Webpage](https://k-pineda.github.io/Work_Day_Scheduler/)
 
 ## Credits
 
-List your collaborators, if any, with links to their GitHub profiles.
-
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-
-If you followed tutorials, include links to those here as well.
+[Challenge 5 Repo](https://github.com/k-pineda/Work_Day_Scheduler.git)
